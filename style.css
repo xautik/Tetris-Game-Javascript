@@ -1,15 +1,16 @@
-
 body {
   overflow: hidden;
-  background-image: linear-gradient(to left, #ef3258, #4863eb);
+  background: linear-gradient(to left, #ef3258, #4863eb);
   height: auto;
   width: auto;
-  font-family: calibri;	
+  font-family: calibri;
+/* border: 3px solid #fff; */
 }
 /* main window */
 #tetris {
   position: relative;
 	text-align: left;
+	top: 20vh;
   width: 360px;
   height: 100%;
   padding: 20px;
