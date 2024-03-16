@@ -1,15 +1,10 @@
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing:  border-box;
-}
+
 body {
   overflow: hidden;
   background-image: linear-gradient(to left, #ef3258, #4863eb);
   height: auto;
   width: auto;
-  font-family: calibri;
-	margin: auto;	
+  font-family: calibri;	
 }
 /* main window */
 #tetris {
