@@ -1,18 +1,18 @@
 body {
   overflow: hidden;
   background: linear-gradient(to left, #ef3258, #4863eb);
-  font-family: calibri;
+  font-family: Calibri, sans-serif;
 }
 
 #tetris {
   position: relative;
-  text-align: left;
-  width: 360px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
   padding: 20px;
-  margin: auto; 
-  background: rgba(255, 255, 255, 0.45);
-  opacity: 0.8;
-  border-radius: 5%;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
   backdrop-filter: blur(10px);
 }
 
@@ -24,20 +24,19 @@ body {
   position: relative;
   color: #1c2833;
   border-radius: 5px;
+  margin: 20px auto;
 }
 
 #canvas h1 {
   margin: 0;
-  padding: 0;
-  text-align: center;
-  font-size: 30px;
   padding-top: 200px;
+  font-size: 30px;
   color: #1c2833;
 }
 
 #canvas h2 {
   text-align: center;
-} 
+}
 
 .piece {
   border: 1px solid white;
@@ -47,12 +46,57 @@ body {
 #start, #pause {
   width: 60px;
   height: 30px;
+  background: linear-gradient(to left, #4c1c5f, #28032d);
+  border-radius: 9px;
+  border: none;
+  color: #f8f3f9;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+#start:hover, #pause:hover {
+  background: linear-gradient(to left, #27AE60, #A9DFBF);
+  color: #28032d;
+  font-weight: 400;
 }
 
 .name-box, .buttons {
   width: 100%;
-  max-width: 134px;
-  margin-top: 20px;
+  max-width: 150px;
+  margin: 0 auto;
+}
+
+.name-box {
+  height: 90px;
+  float: right;
+  margin-top: -90px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.name-box h1 {
+  color: #27062ccf;
+  padding-top: 12px;
+  margin: auto;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.name-box p {
+  color: #26062bc0;
+  margin: auto;
+}
+
+.buttons {
+  height: 40px;
+  float: right;
+  margin-top: -150px;
+  padding-top: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 13px;
 }
 
 .square {
@@ -66,7 +110,9 @@ body {
   width: 100%;
   max-width: 115px;
   height: 110px;
+  background-color: #000;
   border-radius: 10px;
+  justify-content: center;
 }
 
 #info {
@@ -75,31 +121,53 @@ body {
   height: 260px;
   padding: 10px;
   border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.foot {  
+.foot {
   border-radius: 10px;
-  height: 60px; 
+  position: relative;
+  height: 60px;
   bottom: -20px;
-  width: 100%;  
+  width: 100%;
+  background: rgba(255, 255, 255, 0.45);
   text-align: center;
   line-height: 60px;
-}  
-
+}
+  
 .foot h4 {
-  color:#26062b;
+  color: #26062b;
   text-decoration: none;
+}
+
+.foot h4 a {
+  color: #26062b;
+  text-decoration: none;
+}
+
+.foot h4 a:hover {
+  color: #7d2d8a;
 }
 
 /* Media Queries */
 @media only screen and (min-width: 600px) {
   #tetris {
-    width: 50%;
+    width: 80%;
+    max-width: 500px;
+  }
+
+  .name-box, .buttons {
+    max-width: 200px;
   }
 }
 
 @media only screen and (min-width: 900px) {
   #tetris {
-    width: 30%;
+    width: 70%;
+    max-width: 600px;
+  }
+
+  .name-box, .buttons {
+    max-width: 250px;
   }
 }
