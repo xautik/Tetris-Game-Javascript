@@ -26,7 +26,7 @@ body {
 /* player window */
 #canvas {
   width: 200px;
-  height: 440px;
+  height: 450px;
   background-color: #000;
   position: relative;
   color: #1c2833;
@@ -224,29 +224,3 @@ body {
 }
 */
 
-.foot {  
-  border-radius:10px;
-  position: relative;  
-  /* left: 10px; */
-  height: 60px; 
-  bottom: -20px;
-  /* right: 0px; */   
-  width: 100%;  
-  background: rgba(255, 255, 255, 0.45);
-  text-align: center;
-  line-height: 60px;
-  backdrop-filter: blur(1px);
-}  
- .foot h4 {
-  color:#26062b;
-  text-decoration: none;
- }
-
- .foot h4 a{
-  color: #26062b;
-  text-decoration: none;
- }
-
- .foot h4 a:hover {
-  color: #7d2d8a;
- }
